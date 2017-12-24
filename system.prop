@@ -1,3 +1,4 @@
 #
 # system.prop for sawshark
 #
+ro.sf.lcd_density=320

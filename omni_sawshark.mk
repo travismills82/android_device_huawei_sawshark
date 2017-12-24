@@ -10,11 +10,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/asus/swift/device.mk)
+$(call inherit-product, device/huawei/sawshark/device.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sawshark
 PRODUCT_NAME := omni_sawshark
 PRODUCT_BRAND := Huawei
-PRODUCT_MODEL := sawshark
-PRODUCT_MANUFACTURER := Huaweiwatch2
+PRODUCT_MODEL := LEO-DLXX
+PRODUCT_MANUFACTURER := Huawei

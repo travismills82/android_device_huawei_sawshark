@@ -1,0 +1,88 @@
+sawshark:/dev/block/platform/soc/7824900.sdhci/by-name # fdisk -l /dev/block/mmcblk0
+Found valid GPT with protective MBR; using GPT
+
+Disk /dev/block/mmcblk0: 7634944 sectors, 3728M
+Logical sector size: 512
+Disk identifier (GUID): 98101b32-bbe2-4bf2-a06e-2bb33d000c20
+Partition table holds up to 36 entries
+First usable sector is 34, last usable sector is 7634910
+
+Number  Start (sector)    End (sector)  Size       Code  Name
+   1              34            1057        512K   0700  sbl1
+   2            1058            2081        512K   0700  sbl1bak
+   3            2082            3105        512K   0700  rpm
+   4            3106            4129        512K   0700  rpmbak
+   5            4130            5665        768K   0700  tz
+   6            5666            7201        768K   0700  tzbak
+   7            7202           17441       5120K   0700  aboot
+   8           17442           27681       5120K   0700  abootbak
+   9           27682           48161       10.0M   0700  nvdata
+  10           48162           58401       5120K   0700  nvbin
+  11           58402           66593       4096K   0700  modemst1
+  12           66594           74785       4096K   0700  modemst2
+  13           74786           74787        1024   0700  fsc
+  14           74788           74803        8192   0700  ssd
+  15           74804           76851       1024K   0700  misc
+  16           76852           97331       10.0M   0700  splash
+  17           97332           98355        512K   0700  keystore
+  18           98356           99379        512K   0700  config
+  19           99380          109619       5120K   0700  nfc
+  20          109620          130099       10.0M   0700  reserved
+  21          131072          131135       32768   0700  DDR
+  22          131136          139327       4096K   0700  fsg
+  23          139328          147519       4096K   0700  devinfo
+  24          147520          148031        256K   0700  cmnlib
+  25          148032          148543        256K   0700  cmnlibbak
+  26          148544          149055        256K   0700  keymaster
+  27          149056          149567        256K   0700  keymasterbak
+  28          149568          170047       10.0M   0700  oem
+  29          170048          235583       32.0M   0700  boot
+  30          235584          235615       16384   0700  sec
+  31          235616          301151       32.0M   0700  recovery
+  32          301152          524287        108M   0700  modem
+  33          524288         2621439       1024M   0700  system
+  34         2621440         2752511       64.0M   0700  cache
+  35         2752512         7625639       2379M   0700  userdata
+  
+  
+  
+  
+sawshark:/dev/block/platform/soc/7824900.sdhci/by-name # ls -al /dev/block/platform/soc/7824900.sdhci/by-name
+total 0
+drwxr-xr-x 2 root root 740 1970-01-03 05:00 .
+drwxr-xr-x 4 root root 820 1970-01-03 05:00 ..
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 DDR -> /dev/block/mmcblk0p21
+lrwxrwxrwx 1 root root  20 1970-01-03 05:00 aboot -> /dev/block/mmcblk0p7
+lrwxrwxrwx 1 root root  20 1970-01-03 05:00 abootbak -> /dev/block/mmcblk0p8
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 boot -> /dev/block/mmcblk0p29
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 cache -> /dev/block/mmcblk0p34
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 cmnlib -> /dev/block/mmcblk0p24
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 cmnlibbak -> /dev/block/mmcblk0p25
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 config -> /dev/block/mmcblk0p18
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 devinfo -> /dev/block/mmcblk0p23
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 fsc -> /dev/block/mmcblk0p13
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 fsg -> /dev/block/mmcblk0p22
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 keymaster -> /dev/block/mmcblk0p26
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 keymasterbak -> /dev/block/mmcblk0p27
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 keystore -> /dev/block/mmcblk0p17
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 misc -> /dev/block/mmcblk0p15
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 modem -> /dev/block/mmcblk0p32
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 modemst1 -> /dev/block/mmcblk0p11
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 modemst2 -> /dev/block/mmcblk0p12
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 nfc -> /dev/block/mmcblk0p19
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 nvbin -> /dev/block/mmcblk0p10
+lrwxrwxrwx 1 root root  20 1970-01-03 05:00 nvdata -> /dev/block/mmcblk0p9
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 oem -> /dev/block/mmcblk0p28
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 recovery -> /dev/block/mmcblk0p31
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 reserved -> /dev/block/mmcblk0p20
+lrwxrwxrwx 1 root root  20 1970-01-03 05:00 rpm -> /dev/block/mmcblk0p3
+lrwxrwxrwx 1 root root  20 1970-01-03 05:00 rpmbak -> /dev/block/mmcblk0p4
+lrwxrwxrwx 1 root root  20 1970-01-03 05:00 sbl1 -> /dev/block/mmcblk0p1
+lrwxrwxrwx 1 root root  20 1970-01-03 05:00 sbl1bak -> /dev/block/mmcblk0p2
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 sec -> /dev/block/mmcblk0p30
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 splash -> /dev/block/mmcblk0p16
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 ssd -> /dev/block/mmcblk0p14
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 system -> /dev/block/mmcblk0p33
+lrwxrwxrwx 1 root root  20 1970-01-03 05:00 tz -> /dev/block/mmcblk0p5
+lrwxrwxrwx 1 root root  20 1970-01-03 05:00 tzbak -> /dev/block/mmcblk0p6
+lrwxrwxrwx 1 root root  21 1970-01-03 05:00 userdata -> /dev/block/mmcblk0p35
