@@ -7,7 +7,7 @@ DEVICE_PATH := device/huawei/sawshark
 
 TARGET_ARCH := arm
 TARGET_NO_BOOTLOADER := true
-TARGET_BOARD_PLATFORM := MSM8909w
+TARGET_BOARD_PLATFORM := msm8909
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
