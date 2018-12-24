@@ -3,6 +3,6 @@
     "remote":"github",
     "repository": "LineageOS/android_device_generic_goldfish",
     "target_path": "device/generic/goldfish",
-    "revision":"cm-14.1"
+    "revision":"lineage-16.0"
   }
 ]
