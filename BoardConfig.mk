@@ -1,5 +1,3 @@
-USE_CAMERA_STUB := true
-
 # inherit from the proprietary version
 -include vendor/huawei/sawshark/BoardConfigVendor.mk
 
@@ -14,8 +12,7 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := cortex-a7
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
-#TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
-#TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
+USE_CAMERA_STUB := true
 
 # Krait optimizations
 TARGET_USE_KRAIT_BIONIC_OPTIMIZATION := true
@@ -47,6 +44,10 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_JB_CRYPTO := true
 
+# Android Verified Boot
+BOARD_AVB_ENABLE := false
+BOARD_BUILD_DISABLED_VBMETAIMAGE := true
+
 # recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -64,7 +65,6 @@ RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TW_NO_USB_STORAGE := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 RECOVERY_SDCARD_ON_DATA := true
-#BOARD_USE_CUSTOM_RECOVERY_FONT := \"font_7x16.h\"
 BOARD_HAS_NO_REAL_SDCARD := true
 TW_EXCLUDE_SUPERSU := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
